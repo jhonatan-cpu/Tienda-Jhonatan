@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es"> 
+<head>     
+  <meta charset="UTF-8">     
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">     
+  <title>Electrodomésticos García</title> 
+
+  <style>
+    /* === CONFIGURACIÓN GENERAL === */
+    body {
+      margin: 0;
+      padding: 20px;
+      background: #f5f5f5;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+      min-height: 100vh; 
+    }
+
+    section.Consolas {
+      width: 100%;
+      max-width: 1200px; /* espacio suficiente para 4 columnas */
+      margin: 0 auto;
+    }
+
+    h1, h2, ul {
+      text-align: center;
+    }
+
+    ul {
+      display: inline-block;   
+      text-align: left;        
+      padding-left: 20px;      
+    }
+
+    .titulo-producto {
+      text-align: center;
+    }
+
+    /* === HEADER === */
+    .encabezado {
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+      gap: 20px;
+      padding: 20px;
+      border: 2px solid black; 
+      width: fit-content;
+      margin: 0 auto 30px auto;
+      background: white;
+      border-radius: 10px;
+    }
+
+    .logo {
+      width: 50px;
+      height: auto;   /* ✅ corregido */
+      border-radius: 5px;
+    }
+
+    .titulo {
+      font-size: 24px;
+      font-family: monospace; 
+      color: rgb(13, 13, 13);
+      margin: 0;
+    }
+
+    /* === PRODUCTOS EN GRID === */
+    .contenedor-productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .producto {
+      background-color: white;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .producto:hover {
+      transform: scale(1.05);
+    }
+
+    .producto img {
+      width: 100%;
+      height: 200px;   /* mismo alto */
+      object-fit: cover;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .titulo-producto {
+      font-size: 16px;
+      margin: 10px 0;
+    }
+
+    .precio {
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head> 
+<body>  
+
+  <!-- HEADER -->
+       
+    <img src="https://peruretail.sfo3.cdn.digitaloceanspaces.com/wp-content/uploads/Captura-de-pantalla-1092.png" alt="Logo" class="logo">
+    <h1 class="titulo">Electrodomésticos García</h1>  
+  </header>  
+
+  <!-- CATEGORÍAS -->
+  <h2>Categorías</h2>         
+  <ul>             
+    <li>Refrigeradoras</li>             
+    <li>Microondas</li>             
+    <li>Lavadoras</li>             
+    <li>Televisores</li>         
+  </ul>   
+
+  <!-- PRODUCTOS -->
+  <section class="Consolas">             
+
+    <!-- Refrigeradoras -->
+    <h2>Refrigeradoras</h2>             
+    <div class="contenedor-productos">
+      <div class="producto">                     
+        <img src="https://www.lg.com/cac/images/refrigeradora/md06203996/gallery/180_1.jpg" alt="LG">                     
+        <h4 class="titulo-producto">Refrigeradora Top Freezer 12 pies “VT34WPP”</h4>                     
+        <p class="precio">Q 4,599</p>                               
+      </div>                 
+      <div class="producto">                     
+        <img src="https://elektragt.vtexassets.com/arquivos/ids/198927-800-auto?v=638736841639970000&width=800&height=auto&aspect=true" alt="Samsung">                     
+        <h4 class="titulo-producto">Side by Side 21 pies³ RS57DG4000M9AP</h4>                     
+        <p class="precio">Q 6,499</p>                                     
+      </div>                 
+      <div class="producto">                     
+        <img src="https://sears.com.gt/wp-content/uploads/imgSears/316882-3.jpg" alt="Whirlpool">                     
+        <h4 class="titulo-producto">Side by Side 25 pies³ 7WRS25SDHM</h4>                     
+        <p class="precio">Q 9,495 </p>                 
+      </div>                 
+      <div class="producto">                     
+        <img src="https://cdn.kemik.gt/2025/07/RT14N6CDX-1200x1200-5.-700x700.-500x500.jpg" alt="Hisense">                     
+        <h4 class="titulo-producto">No Frost 14 pies cúbicos, Multi-Air-Flow</h4>                     
+        <p class="precio">Q 3,499</p>                                             
+      </div> 
+    </div>             
+
+    <!-- Microondas -->
+    <h2>Microondas</h2>             
+    <div class="contenedor-productos">                     
+      <div class="producto">                         
+        <img src="https://elektragt.vtexassets.com/arquivos/ids/178619-150-150?v=637764101896530000&width=150&height=150&aspect=true" alt="Panasonic">                         
+        <h4 class="titulo-producto">Microondas 0.8 pies NN-GT35HBRPT</h4>                         
+        <p class="precio">Q 749 </p>                                       
+      </div>                 
+      <div class="producto">                         
+        <img src="https://www.elgallomasgallo.com.gt/media/catalog/product/h/o/horno-de-microondas-mabe-hmm09nj-162116-1-frontal.jpg?optimize=medium&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="Mabe">                         
+        <h4 class="titulo-producto">Horno microondas modelo HMM09NJ</h4>                         
+        <p class="precio">Q 758</p>                                             
+      </div>                 
+      <div class="producto">                         
+        <img src="https://intercompras.com/product_thumb.php?img=images/product/MABE_HMM111SEJ.jpg&w=300&h=320" alt="Mabe">                         
+        <h4 class="titulo-producto">Horno microondas 0.7 pies cúbicos HMM70SEJ</h4>                         
+        <p class="precio">Q 748 </p>                 
+      </div>                 
+      <div class="producto">                         
+        <img src="https://agenciasway.com.sv/wp-content/uploads/2022/11/40100570.jpg" alt="General Electric">                         
+        <h4 class="titulo-producto">Microondas de 0.9 pies cúbicos MGE09SEJ</h4>                         
+        <p class="precio">Q 850</p>                 
+      </div>              
+    </div>
+
+    <!-- Lavadoras -->
+    <h2>Lavadoras</h2>                     
+    <div class="contenedor-productos">                         
+      <div class="producto">                             
+        <img src="https://vivendo.com.gt/image/cache/catalog/Productos/Machotevivendo%20-%202022-09-06T110605.505-600x600.png" alt="Frigidaire">                             
+        <h4 class="titulo-producto">FWAB20J4EBGUW (20 kg, varias funciones)</h4>                             
+        <p class="precio">Q 3,899</p>                                               
+      </div>                         
+      <div class="producto">                             
+        <img src="https://i5.walmartimages.com.mx/samsmx/images/product-images/img_large/981013433l.jpg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Mabe">                             
+        <h4 class="titulo-producto">Mabe Automática 24 Kg (LMA74215WBAB1)</h4>                             
+        <p class="precio">Q 4,999 </p>                                                          
+      </div>                         
+      <div class="producto">                             
+        <img src="https://servicio.mabeglobal.com/medias/GE-Lavadora-22Kg-blanca-LGH72201WBAB0-frente.jpg-300Wx300H?context=bWFzdGVyfGltYWdlc3wzMjgzN3xpbWFnZS9qcGVnfGFXMWhaMlZ6TDJnek5DOW9aV012T0RnM01EazVPRFUzTXpBNE5pNXFjR2N8MmQwZGEzYjlmNTEyNjA1ZGYwNDYwMDE3YTMwYzA1ZDNlNzc2NTAyMTgwNWU1ZjNjNDUzYjIwZTU0MGZhOWY0Ng" alt="General Electric">                             
+        <h4 class="titulo-producto">Lavadora General Electric 22 Kg</h4>                             
+        <p class="precio">Q 6,370</p>                         
+      </div>                         
+      <div class="producto">                             
+        <img src="https://img.pacifiko.com/PROD/resize/1/500x500/MWM0M2E0Mj.jpg" alt="Acros">                             
+        <h4 class="titulo-producto">Lavadora Acros 16 Kg automática con agitador</h4>                             
+        <p class="precio">Q 3,732</p>                         
+      </div>              
+    </div>
+
+    <!-- Televisores -->
+    <h2>Televisores</h2>                     
+    <div class="contenedor-productos">                         
+      <div class="producto">                             
+        <img src="https://www.electroideas.cl/wp-content/uploads/2020/07/tv050hai0120l3-1.jpg" alt="Haier">                             
+        <h4 class="titulo-producto">LED 4K 65″ Smart TV Haier</h4>                             
+        <p class="precio">Q 6,200</p>                                               
+      </div>                         
+      <div class="producto">                             
+        <img src="https://media.flixcar.com/webp/synd-asset/Samsung-71211840-latin-fhd-t5300-un43t5300apxpa-dynamicblack-229166452--Download-Source--zoom.png" alt="Samsung">                             
+        <h4 class="titulo-producto">Smart TV FHD 43″ Samsung</h4>                             
+        <p class="precio">Q 3,272</p>                                                          
+      </div>                         
+      <div class="producto">                             
+        <img src="https://www.lg.com/content/dam/channel/wcms/nz/images/tvs/43ut81006la_anr_ehap_nz_c/gallery/md07596037-450x450.jpg" alt="LG">                             
+        <h4 class="titulo-producto">55″ 4K Smart TV LG</h4>                             
+        <p class="precio">Q 4,999</p>                         
+      </div>                         
+      <div class="producto">                             
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwwx5C1C4EX1_lI4i9BQbGZxN3bq2zvuOSGQ&usqp=CAU" alt="Sony">                             
+        <h4 class="titulo-producto">LED Smart TV Sony 50″</h4>                             
+        <p class="precio">Q 5,499</p>                         
+      </div>              
+    </div>
+
+  </section>   
+
+</body> 
+</html>
